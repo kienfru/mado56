@@ -3,7 +3,7 @@ resource "aws_instance" "priv-serer1" {
     instance_type = var.type
     key_name = "demo"
     subnet_id = aws_subnet.priv-sub1.id
-    security_groups = [ aws_security_group.kiensg.id ]
+    security_groups = [ aws_security_group.kiensg1.id ]
 
     tags = {
       Name ="priv_server1"
