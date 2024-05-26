@@ -1,0 +1,14 @@
+//groovry script to automate terraform codes through CICD pipeline into AWS
+
+pipeline {
+    agent any
+}
+stages {
+    stage ('checkout') {
+        steps{
+            
+            //chechout from the source code reposity
+            git branch
+        }
+    }
+    }
