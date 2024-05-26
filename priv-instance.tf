@@ -1,7 +1,7 @@
 resource "aws_instance" "priv-server" {
-    ami = var.ami2
-    instance_type = var.ami2
-    key_name = "demo"
+    ami = var.my_ami
+    instance_type = var.type
+    key_name = "clintontest"
     subnet_id = aws_subnet.priv-sub.id
     security_groups = [ aws_security_group.kiensg.id ]
 

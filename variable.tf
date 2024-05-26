@@ -40,29 +40,18 @@ variable "region" {
       
     }
     #variable for pub instance
-    variable "ami1" {
+    variable "my_ami" {
         type = string
         default = "ami-04b70fa74e45c3917"
       
     }
     #variable for pub instance type
-    variable "type1" {
+    variable "type" {
         type = string
         default = "t2.micro"
       
     }
-    #variable for pri instance
-    variable "ami2" {
-        type = string
-        default = "ami-04b70fa74e45c3917"
       
-    }
-    #variable for priv instance type
-    variable "type2" {
-        type = string
-        default = "t2.micro"
-      
-    }
     #creating variable for aws_s3_bucket
     variable "bucket" {
         type = string
