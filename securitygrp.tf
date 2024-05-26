@@ -1,9 +1,9 @@
 #creating securitygrp
-resource "aws_security_group" "kiensg" {
+resource "aws_security_group" "kiensg1" {
     vpc_id = aws_vpc.kienvpc.id
 
     tags = {
-      Name="kiensg"
+      Name="kiensg1"
     }
     ingress {     #ingress meance incoming traffic
         from_port = 22

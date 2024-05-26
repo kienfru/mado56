@@ -1,5 +1,5 @@
 #creatting route-tables for my vpc_subnet
-resource "aws_route_table" "pub-rtb" {
+resource "aws_route_table" "pub-rtb1" {
     vpc_id = aws_vpc.kienvpc.id
 
     route  {
@@ -8,17 +8,17 @@ resource "aws_route_table" "pub-rtb" {
 
     }
     tags = {
-      Name ="pub-rt"
+      Name ="pub-rt1"
     }
 }
 
 
 #creating routetable for my priv_subnet
-resource "aws_route_table" "priv-rtb" {
+resource "aws_route_table" "priv-rtb1" {
     vpc_id = aws_vpc.kienvpc.id
 
     tags = {
-      Name ="priv-rt"
+      Name ="priv-rt1"
     }
   
 }
